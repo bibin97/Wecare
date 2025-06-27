@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import { toast } from "react-toastify";
 import axios from 'axios'
 
@@ -77,5 +78,9 @@ const AppContextProvider = (props) => {
     )
 
 }
+AppContextProvider.propTypes = {
+    children: PropTypes.node.isRequired,
+};
+
 
 export default AppContextProvider

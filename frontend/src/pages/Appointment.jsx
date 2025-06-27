@@ -10,7 +10,7 @@ const Appointment = () => {
   const { docId } = useParams();
   const { doctors, currencySymbol, backendUrl, token, getDoctosData } =
     useContext(AppContext);
- const daysOfWeek = ['WED','THE','FRI','SAT','','MON','TUE','WED'];
+ const daysOfWeek = ['WED','THE','FRI','SAT','SUN','MON','TUE','WED'];
 
 
   const [docInfo, setDocInfo] = useState(false);
